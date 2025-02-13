@@ -9,20 +9,35 @@
 <body>
     <div class="container">
         <header>
-            <!-- ... existing code ... -->
-<nav class="navbar">
-    <div class="logo"><a class="navbar-brand" href="https://www.starbucks.com.tr" target="_blank" rel="noopener noreferrer"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png" style="width: 50px; height: 50px;" alt="Starbucks Logo"></a></div>
-    <ul class="nav-links">
-        <li><a href="#anasayfa">Anasayfa</a></li>
-        <li><a href="#hakkimizda">Hakkımızda</a></li>
-        <li><a href="#iletisim">Ürünler</a></li>
-    </ul>
-    <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-    </div>
-</nav>
+            <nav class="navbar">
+                <a href="https://www.starbucks.com.tr" class="logo" target="_blank" rel="noopener noreferrer"><img src="starbucks.png" alt="Starbucks"></a>
+                <ul>
+                    <li><a href="https://www.starbucks.com.tr" target="_blank" rel="noopener noreferrer">Ana Sayfa</a></li>
+                    <li><a href="https://www.starbucks.com.tr/hakkimizda" target="_blank" rel="noopener noreferrer">Hakkımızda</a></li>
+                    <li><a href="https://www.starbucks.com.tr/urunler" target="_blank" rel="noopener noreferrer">Ürünler</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+                <div class="search-box">
+                    <input type="text" class="search-bar" placeholder="Search">
+                    <button type="submit" class="search-button"> 
+                        <img src="search.png" alt="Search">
+                    </button>
+                </div>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+            
+            <div class="menu" id="menu">
+                <span class="close-btn" onclick="toggleMenu()">&times;</span>
+                <a href="https://www.starbucks.com.tr" target="_blank" rel="noopener noreferrer">Ana Sayfa</a>
+                <a href="https://www.starbucks.com.tr/about-us/our-heritage" target="_blank" rel="noopener noreferrer">Hakkımızda</a>
+                <a href="https://www.starbucks.com.tr/menu" target="_blank" rel="noopener noreferrer">Ürünler</a>
+                <a href="https://www.starbucks.com.tr/contact" target="_blank" rel="noopener noreferrer">İletişim</a>
+            </div>
+            
         </header>
         <main class="main">
             <div class="sidebar">
